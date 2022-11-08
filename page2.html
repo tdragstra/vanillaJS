@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			function multiply(a, b) {
+				let element1 = document.getElementById("nummer1");
+				let element2 = document.getElementById("nummer2");
+				let result = parseInt(element1.value) * parseInt(element2.value);
+				alert(result);
+			}
+
+			function addition(a, b) {
+				let element1 = document.getElementById("addition1");
+				let element2 = document.getElementById("addition2");
+				let result = parseInt(element1.value) + parseInt(element2.value);
+				alert(result);
+			}
+
+			function minus(a, b) {
+				let element1 = document.getElementById("minus1");
+				let element2 = document.getElementById("minus2");
+				let result = parseInt(element1.value) - parseInt(element2.value);
+				alert(result);
+			}
+
+			function division(a, b) {
+				let element1 = document.getElementById("division1");
+				let element2 = document.getElementById("division2");
+				let result = parseInt(element1.value) / parseInt(element2.value);
+				alert(result);
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Pagina 2</h2>
+
+		<h3>Rekenmachine</h3>
+		<h2>Multiply</h2>
+		<form>
+			<input type="number" id="nummer1" />
+			x
+			<input type="number" id="nummer2" />
+			<input type="submit" onclick="multiply()" />
+		</form>
+		<h2>Addition</h2>
+		<form>
+			<input type="number" id="addition1" />
+			+
+			<input type="number" id="addition2" />
+			<input type="submit" onclick="addition()" />
+		</form>
+		<h2>Minus</h2>
+		<form>
+			<input type="number" id="minus1" />
+			-
+			<input type="number" id="minus2" />
+			<input type="submit" onclick="minus()" />
+		</form>
+		<h2>Division</h2>
+		<form>
+			<input type="number" id="division1" />
+			:
+			<input type="number" id="division2" />
+			<input type="submit" onclick="division()" />
+		</form>
+	</body>
+</html>
